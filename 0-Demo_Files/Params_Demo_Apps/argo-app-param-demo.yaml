@@ -6,14 +6,14 @@ metadata:
 spec:
   destination:
     name: ''
-    namespace: argocdapp-param-demo  
+    namespace: argocdapp-param-demo
     server: 'https://kubernetes.default.svc'
   source:
     path: 0-Demo_Files/Params_Demo
-    repoURL: 'https://github.com/SMACAcademy/ArgoCD-Complete-Master-Course.git'
+    repoURL: 'https://github.com/ganislp/ArgoCD-Complete-Master-Course.git'
     targetRevision: HEAD
   sources: []
   project: default
   syncPolicy:
     syncOptions:
-      - CreateNamespace=true
+    - CreateNamespace=true

@@ -6,14 +6,14 @@ metadata:
 spec:
   destination:
     name: ''
-    namespace: argocdappdemo-retry  
+    namespace: argocdappdemo-retry
     server: 'https://kubernetes.default.svc'
   source:
     path: 0-Demo_Files/Sync_Retry
-    repoURL: 'https://github.com/SMACAcademy/ArgoCD-Complete-Master-Course.git'
+    repoURL: 'https://github.com/ganislp/ArgoCD-Complete-Master-Course.git'
     targetRevision: HEAD
   sources: []
   project: default
   syncPolicy:
     syncOptions:
-      - CreateNamespace=true
+    - CreateNamespace=true
